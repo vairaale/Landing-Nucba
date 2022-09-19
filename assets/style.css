@@ -1,23 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box;  
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
     
 }
 header{
-    background-color: #a2d2ff;
+    background: white;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 90px;
-    padding: 0px 20px 0px 30px;
-    position: fixed;
+    height: 70px;
+    padding: 0px 90px 0px 30px;
+    position: relative;
     top: 0;
-    border-bottom: 5px grey solid;
+    border-bottom: 5px green solid;
+    
 }
 .logo{
     height: 100%;
+    padding-right: 30px;
+    border-right: 3px green solid;
+    
+    
 }
 
 .navbar,
@@ -27,16 +35,99 @@ header{
     justify-content: center;
     
 }
+.navbar{
+    gap: 30px;
+    
+}
 .listaNavbar{
     gap: 30px;
-    font-family: 'Open Sans', sans-serif;
-        
+            
 }
 .listaNavbar a {
     color: black;
     font-size: 20px;
     text-decoration: none;
+    font-weight: 600;
 }
-li {list-style: none;}
 
 
+main{
+    background: rgb(178, 231, 99);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color:white
+}
+
+#hero{
+    margin-top: 20px;
+    padding: 50px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+#hero-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+#hero-info h1 {
+    font-size: 40px;
+    width: 80%;
+    min-width: 500px;
+    font-weight: 800;
+    text-align: justify;
+}
+#hero-info p {
+    font-size: 25px;
+    width: 70%;
+    text-align: justify;
+}
+#hero-info p > span {
+    font-weight: 800;
+    font-size: 30px;
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    color:transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+   
+    }
+
+.hero-botones {
+    display: flex;
+    flex-direction: row;
+        gap: 30px;
+    
+}
+
+.hero-botones a{
+
+    background-color: green;
+    color:white;
+    width: 120px;
+    padding: 10px 4px;
+    border-radius: 10px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    border-style: solid;
+    border-color: whitesmoke;         
+}
+.hero-imagen{
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(to right, #348f50, #56b4d3)
+}
+#info{
+    text-align: center;
+    padding: 40px 90px 30px 90px;
+    
+}
